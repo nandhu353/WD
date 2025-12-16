@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD App</title>
+  <link rel="stylesheet" href="prostyle.css">
+</head>
+<body>
+  <div class="container">
+    <div class="studentform" >
+        <h2>Student Details Form</h2>
+    </div>
+    
+    <!-- Form -->
+    <form  id="studentForm">
+      <input type="hidden" id="studentId">
+      <input type="text" id="name" placeholder="Enter Name" required>
+      <input type="email" id="email" placeholder="Enter Email" required>
+      <input type="text" id="phone" placeholder="Enter Phone" required>
+      <button style="border-radius: 10px;" type="submit">Save</button>
+    </form>
+
+    <h3>Student Records</h3>
+    <table id="studentTable">
+      <thead>
+        <tr>
+          <th>Name</th><th>Email</th><th>Phone</th><th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="proscript.js"></script>
+</body>
+</html>
